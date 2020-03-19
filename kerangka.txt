@@ -1,0 +1,22 @@
+Final Project Dicoding | Belajar Dasar Web
+
+---- Kerangka ----
+
+# Header
+- Topbar / Navbar : home | about | projects | contact
+- gambar profile & nama
+
+# Main content
+
+*About
+- content 1 : asal sekolah, komunitas, skills
+- aside : biodata
+
+*Projects
+- content 2 : flexbox 3 bagian (game lempar koin, html5 music player, rock paper scissors game(comming soon!))
+
+*Contact
+- content 3 : google maps, alamat, sosmed
+
+# Footer
+- content 4 : @copyright

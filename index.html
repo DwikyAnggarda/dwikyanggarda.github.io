@@ -1,25 +1,205 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
+
+<head>
+    <title>Personal Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
+    <!-- <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style> -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/adc9e05df9.js" crossorigin="anonymous"></script>
+    <script src="assets/styles/all.js"></script>
+</head>
+<!--
+    //Pseudo-class Selector
+:link => rule untuk diterapkan pada tautan yg belum pernah dikunjungi
+:visited => rule untuk diterapkan pada tautan yg sudah pernah dikunjungi
+:hover => rule untuk diterapkan pada tautan ketika diarahkan kursor
+:active => rule akan diterapkan pada tautan ketika ditekan
+
+    //Pseudo-elemen Selector
+    Selector ini biasa digunakan ketika kita ingin menambahkan sebuah konten tepat sebelum dan setelah sebuah elemen
+    contoh => ::before & ::after
+-->
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#" class="name">Dwiky</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <img src="assets/image/jasmerah.jpg" width="20%" class="cardv foto" alt="">
+            <h1><b>Hi!</b></h1>
+            <p><b>I'm Dwiky Anggarda Amien</b></p>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <!-- About Me -->
+            <article id="about" class="card">
+                <h2 id="about" style="text-align: center;">About Me</h2>
+                <h3>Asal Sekolah</h3>
+                <img src="assets/image/halsmk.jpg" class="featured-image" alt="about">
+                <p>Saya berasal dari SMKS Antartika 2 Sidoarjo. Tepatnya di daerah Sidoarjo desa Siwalanpanji kecamatan
+                    Buduran. Saya sekarang kelas XI - RPL.</p>
+
+                <p>SMKS Antartika 2 Sidoarjo adalah menyediakan berbagai fasilitas penunjang pendidikan bagi anak
+                    didiknya. Terdapat guru-guru dengan kualitas terbaik yang kompeten dibidangnya, kegiatan penunjang
+                    pembelajaran seperti ekstrakurikuler (ekskul), organisasi siswa, komunitas belajar, tim olahraga,
+                    dan perpustakaan sehingga siswa dapat belajar secara maksimal. Proses belajar dibuat senyaman
+                    mungkin bagi murid dan siswa.</p>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Biodata</h2>
+                    <figure>
+                        <img src="assets/image/jaketmerah.jpg" style="border-radius: 15px 15px 70px 70px">
+                    </figure>
+                </header>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Dwiky Anggarda Amien</td>
+                        </tr>
+                        <tr>
+                            <th>TTL</th>
+                            <td>15 Februari 2003</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>dwiky.amin@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>WhatsApp</th>
+                            <td>+62 838-3252-5360</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+
+        <hr style="visibility: hidden;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr class="style5">
+
+        <!-- Komunitas -->
+
+        <h2 id="komunitas" style="text-align: center;">Komunitas</h2>
+        <div class="flex-container">
+            <div><img src="assets/image/sdadev.jpg" width="200px" alt=""></div>
+            <div><img src="assets/image/sbydev.png" width="200px" alt=""></div>
+            <div><img src="assets/image/anddev.jpg" width="200px" alt=""></div>
+        </div>
+
+        <br>
+        <hr class="style5">
+
+        <!-- Projects -->
+
+        <h2 id="projects" style="text-align: center;">Projects</h2>
+        <div class="flex-container-projects" style="font-size: 24px;">
+            <div><i class="fas fa-fw fa-headphones fa-7x"></i><br>
+                <h5 style="margin-bottom: -25px;">HTML5 Music Player With LINE LIFF</h5> <br>
+                <button class="button" onclick="html5Music();" style="margin-left:65px;"><span>Demo </span></button>
+            </div>
+
+            <div><i class="fas fa-fw fa-coins fa-7x">
+                </i>
+                <br>
+                <h5 style="margin-bottom: -25px;">Game Tebak Koin</h5> <br>
+                <button class="button" onclick="tebakKoin();" style="margin-left:70px;"><span>Demo </span></button>
+            </div>
+
+            <div><i class="fas fa-fw fa-hand-rock fa-5x batu"></i><i
+                    class="fas fa-fw fa-hand-scissors fa-5x gunting"></i><br>
+                <h5 style="margin-bottom: -25px;">Rock Paper Scissors Game(Coming Soon)</h5> <br>
+                <button class="button" onclick="comingSoon();" style="margin-left:90px;"><span>Demo </span></button>
+            </div>
+        </div>
+
+        <br>
+        <hr class="style5">
+
+        <!-- Contact -->
+
+        <div id="contact" class="card">
+            <h2 id="contact" style="text-align: center;">Contact Me</h2>
+            <div class="container">
+                <form action="">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.9480491576637!2d112.7213075147761!3d-7.470989394610668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e729b7826901%3A0x9b55afba3ac2b929!2sOmah%20Geprekkk!5e0!3m2!1sid!2sid!4v1584634330844!5m2!1sid!2sid"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <div class="footer-box">
+                <Address>
+                    <p><b>
+                            Address
+                        </b></p>
+                    <p><i class="fas fa-fw fa-map-marked-alt fa-lg"></i> Sidoarjo, Perum. MCG B5-19 Desa Larangan</p>
+                    <p><i class="fab fa-fw fa-whatsapp fa-lg"></i> +62 838-3252-5360</p>
+                    <p><i class="fas fa-fw fa-envelope fa-lg"></i> dwiky.amin@gmail.com</p>
+                </Address>
+            </div>
+        </div>
+
+        <div id="social-media" class="card">
+            <h2 id="sosmed" style="text-align: center;">Find Me On Social Media</h2>
+            <div class="social-icons" style="margin-left: 510px;">
+                <a href="#"><img src="assets/image/ig.png" alt=""></a>
+                <a href="#"><img src="assets/image/fb.png" alt=""></a>
+                <a href="#"><img src="assets/image/wa.png" alt=""></a>
+                <a href="#"><img src="assets/image/twt.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Submission &#169; 2020, Dwiky Anggarda Amien</p>
+    </footer>
+
+    <!--<div id="map"></div>
     <script>
         var map;
 
@@ -34,6 +214,7 @@
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECVtvNbEZVpq3jwfvJ3m3KkjifhPCTKU&callback=initMap"
-        async defer></script>
-  </body>
+        async defer></script> -->
+</body>
+
 </html>

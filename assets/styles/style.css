@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+h2,
+h3 {
+    color: #000000
+}
+
+h5 {
+    margin-top: -5px;
+    text-align: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.jumbotron .foto {
+    margin-top: -45px;
+    margin-left: 215px;
+    float: left;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(31, 68, 77);
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.name {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-top: -21px;
+    margin-left: -22px;
+    float: left;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cardv {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 70px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 30px;
+    padding: 85px;
+    background: url("http://localhost/project/dicoding-dasar-web/assets/image/bghd.jpg");
+    background-size: contain;
+    /* background-color: rgb(120, 207, 39); */
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #1f444d;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+hr.style5 {
+    background-color: #fff;
+    border-top: 2px dashed #8c8b8b;
+}
+
+.flex-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 68, 77);
+}
+
+.flex-container>div>img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: #f1f1f1;
+    border-radius: 50px 50px 50px 50px;
+    margin: 60px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.flex-container-projects {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.flex-container-projects>div>i.fa-headphones,
+i.fa-coins {
+    margin: 60px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.batu {
+    margin: 37px;
+    margin-right: -100px;
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.gunting {
+    margin: 37px;
+    margin-left: 80px;
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*--------------------------------------------- SOCIAL MEDIA SECTION ----------------------------------------------------*/
+#social-media {
+    background: rgb(255, 255, 255);
+    padding: 100px 0;
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    margin: 5px;
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px);
+}
+
+#address {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+}
+
+.address-img {
+    width: 100%;
+}
+
+.address-box {
+    padding: 20px;
+}
+
+.address-box img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.address-box .fa {
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.address-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.address-box .btn-primary {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home {
+        display: none;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin-top: -3px;
+        margin-right: 10px;
+        font-weight: 40;
+    }
+
+    .name {
+        font-size: 20px;
+        margin-top: -31px;
+        margin-left: -26px;
+    }
+}
