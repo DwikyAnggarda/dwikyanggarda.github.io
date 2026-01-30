@@ -1,225 +1,478 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
-    <title>Personal Web</title>
+    <title>Dwiky Anggarda | Backend Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <!-- <style>
-        /* Always set the map height explicitly to define the size of the div
-             * element that contains the map. */
-        #map {
-            height: 100%;
-        }
-
-        /* Optional: Makes the sample page fill the window. */
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style> -->
+    <meta name="description" content="Dwiky Anggarda Amien - Backend Developer dengan kemampuan Fullstack. Spesialis dalam pengembangan sistem backend yang handal dan skalabel.">
+    <meta name="keywords" content="Backend Developer, Fullstack Developer, Web Developer, Dwiky Anggarda">
+    <meta name="author" content="Dwiky Anggarda Amien">
     <link rel="stylesheet" href="assets/styles/style.css">
     <script src="https://kit.fontawesome.com/adc9e05df9.js" crossorigin="anonymous"></script>
-    <script src="assets/styles/all.js"></script>
 </head>
-<!--
-    //Pseudo-class Selector
-:link => rule untuk diterapkan pada tautan yg belum pernah dikunjungi
-:visited => rule untuk diterapkan pada tautan yg sudah pernah dikunjungi
-:hover => rule untuk diterapkan pada tautan ketika diarahkan kursor
-:active => rule akan diterapkan pada tautan ketika ditekan
-
-    //Pseudo-elemen Selector
-    Selector ini biasa digunakan ketika kita ingin menambahkan sebuah konten tepat sebelum dan setelah sebuah elemen
-    contoh => ::before & ::after
--->
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="https://dwikyanggarda.github.io/" class="home">Home</a></li>
-                <li><a href="https://dwikyanggarda.github.io/" class="name">Dwiky</a></li>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="id" onclick="switchLanguage('id')">ID</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Dwiky<span>.</span></a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+                <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
             </ul>
-        </nav>
-        <div class="jumbotron">
-            <img src="assets/image/jasmerah.jpg" width="20%" class="cardv foto" alt="">
-            <h1><b>Hi!</b></h1>
-            <p><b>I'm Dwiky Anggarda Amien</b></p>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <div id="content">
-            <!-- About Me -->
-            <article id="about" class="card">
-                <h2 id="about" style="text-align: center;">About Me</h2>
-                <h3>Asal Sekolah</h3>
-                <img src="assets/image/halsmk.jpg" class="featured-image" alt="about">
-                <p>Saya berasal dari SMKS Antartika 2 Sidoarjo. Tepatnya di daerah Sidoarjo desa Siwalanpanji kecamatan
-                    Buduran. Saya sekarang kelas XI - RPL.</p>
-
-                <p>SMKS Antartika 2 Sidoarjo adalah menyediakan berbagai fasilitas penunjang pendidikan bagi anak
-                    didiknya. Terdapat guru-guru dengan kualitas terbaik yang kompeten dibidangnya, kegiatan penunjang
-                    pembelajaran seperti ekstrakurikuler (ekskul), organisasi siswa, komunitas belajar, tim olahraga,
-                    dan perpustakaan sehingga siswa dapat belajar secara maksimal. Proses belajar dibuat senyaman
-                    mungkin bagi murid dan siswa.</p>
-            </article>
-        </div>
-
-        <aside>
-            <article class="profile card">
-                <header>
-                    <h2>Biodata</h2>
-                    <figure>
-                        <img src="assets/image/jaketmerah.jpg" style="border-radius: 15px 15px 70px 70px">
-                    </figure>
-                </header>
-                <section>
-                    <h3>Informasi Lainnya</h3>
-                    <table>
-                        <tr>
-                            <th>Nama</th>
-                            <td>Dwiky Anggarda Amien</td>
-                        </tr>
-                        <tr>
-                            <th>TTL</th>
-                            <td>15 Februari 2003</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>dwiky.amin@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th>WhatsApp</th>
-                            <td>+62 838-3252-5360</td>
-                        </tr>
-                    </table>
-                </section>
-            </article>
-        </aside>
-
-        <hr style="visibility: hidden;">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr class="style5">
-
-        <!-- Komunitas -->
-
-        <h2 id="komunitas" style="text-align: center;">Komunitas</h2>
-        <div class="flex-container">
-            <div><img src="assets/image/sdadev.jpg" width="200px" alt=""></div>
-            <div><img src="assets/image/sbydev.png" width="200px" alt=""></div>
-            <div><img src="assets/image/anddev.jpg" width="200px" alt=""></div>
-        </div>
-
-        <br>
-        <hr class="style5">
-
-        <!-- Projects -->
-
-        <h2 id="projects" style="text-align: center;">Projects</h2>
-        <div class="flex-container-projects" style="font-size: 24px;">
-            <div><i class="fas fa-fw fa-headphones fa-7x"></i><br>
-                <h5 style="margin-bottom: -25px;">HTML5 Music Player With LINE LIFF</h5> <br>
-                <button class="button" onclick="html5Music();" style="margin-left:65px;"><span>Demo </span></button>
-            </div>
-
-            <div><i class="fas fa-fw fa-coins fa-7x">
-                </i>
-                <br>
-                <h5 style="margin-bottom: -25px;">Game Tebak Koin(Coming Soon)</h5> <br>
-                <button class="button" onclick="tebakKoin();" style="margin-left:70px;"><span>Demo </span></button>
-            </div>
-
-            <div><i class="fas fa-fw fa-hand-rock fa-5x batu"></i><i
-                    class="fas fa-fw fa-hand-scissors fa-5x gunting"></i><br>
-                <h5 style="margin-bottom: -25px;">Rock Paper Scissors Game(Coming Soon)</h5> <br>
-                <button class="button" onclick="comingSoon();" style="margin-left:90px;"><span>Demo </span></button>
-            </div>
-        </div>
-
-        <br>
-        <hr class="style5">
-
-        <!-- Contact -->
-
-        <div id="contact" class="card">
-            <h2 id="contact" style="text-align: center;">Contact Me</h2>
-            <div class="container">
-                <form action="">
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" autocomplete="off" name="fullname" placeholder="Your name..">
-
-                    <label for="email">Email</label>
-                    <input type="text" autocomplete="off" id="email" required name="lastname"
-                        placeholder="Your last name..">
-
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" autocomplete="off" name="subject" placeholder="Write something.."
-                        style="height:80px"></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="footer-box">
-                <div class="container">
-                    <Address>
-                        <p><b>
-                                Address
-                            </b></p>
-                        <p><i class="fas fa-fw fa-map-marked-alt fa-lg"></i> Sidoarjo, Perum. MCG B5-19 Desa Larangan
-                        </p>
-                        <p><i class="fab fa-fw fa-whatsapp fa-lg"></i> +62 838-3252-5360</p>
-                        <p><i class="fas fa-fw fa-envelope fa-lg"></i> dwiky.amin@gmail.com</p>
-                        <p><i class="fas fa-fw fa-globe fa-lg"></i> dwikyanggarda.github.io</p>
-                    </Address>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting" data-i18n="hero.greeting">Halo, saya</span>
+                <h1 class="hero-name">Dwiky Anggarda Amien</h1>
+                <h2 class="hero-title">Backend Developer</h2>
+                <p class="hero-description" data-i18n="hero.description">
+                    Seorang Backend Developer yang berpengalaman dalam membangun sistem yang handal dan skalabel. 
+                    Meskipun fokus utama saya adalah backend, saya juga memiliki kemampuan fullstack untuk 
+                    mengembangkan solusi end-to-end yang komprehensif.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.viewWork">Lihat Portfolio</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero.contactMe">Hubungi Saya</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/dwikyanggarda" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dwikyanggarda" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:dwiky.amin@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.9480491576637!2d112.7213075147761!3d-7.470989394610668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e729b7826901%3A0x9b55afba3ac2b929!2sOmah%20Geprekkk!5e0!3m2!1sid!2sid!4v1584634330844!5m2!1sid!2sid"
-                width="585" height="355" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
-
-        <div id="social-media" class="card">
-            <h2 id="sosmed" style="text-align: center;">Find Me On Social Media</h2>
-            <div class="social-icons" style="margin-left: 510px;">
-                <a href="https://www.instagram.com/dwiky_anggarda/"><img src="assets/image/ig.png" alt=""></a>
-                <a href="https://www.facebook.com/dwiky.anggarda"><img src="assets/image/fb.png" alt=""></a>
-                <a href="https://wa.me/6283832525360?text=Assalamu'alaikum"><img src="assets/image/wa.png" alt=""></a>
-                <a href="https://twitter.com/DwikyAnggarda"><img src="assets/image/twt.png" alt=""></a>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="assets/image/cropped_circle_image-1-2 (1)hd.png" alt="Dwiky Anggarda Amien">
+                </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <p>Submission &#169; 2020, Dwiky Anggarda Amien</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/image/profile.jpg" alt="Dwiky Anggarda" onerror="this.src='assets/image/jaketmerah.jpg'">
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="about.subtitle">Backend Developer & Fullstack Enthusiast</h3>
+                    <p data-i18n="about.paragraph1">
+                        Saya adalah seorang Backend Developer dengan passion yang kuat dalam membangun 
+                        arsitektur sistem yang robust dan efisien. Dengan pengalaman dalam berbagai 
+                        teknologi backend, saya mampu mendesain dan mengimplementasikan API, database, 
+                        serta layanan server-side yang optimal.
+                    </p>
+                    <p data-i18n="about.paragraph2">
+                        Meskipun spesialisasi saya ada di backend, saya juga memiliki kemampuan fullstack 
+                        yang memungkinkan saya untuk memahami dan berkontribusi pada pengembangan frontend 
+                        ketika diperlukan. Hal ini memberikan saya perspektif menyeluruh dalam 
+                        pengembangan aplikasi.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span data-i18n="about.name">Nama</span>
+                                <strong>Dwiky Anggarda Amien</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <strong>dwiky.amin@gmail.com</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span data-i18n="about.location">Lokasi</span>
+                                <strong>Sidoarjo, Indonesia</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span data-i18n="about.phone">Telepon</span>
+                                <strong>+62 838-3252-5360</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="assets/CV_Dwiky Anggarda.pdf" class="btn btn-primary" download data-i18n="about.downloadCV">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Keahlian Teknis</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">Teknologi dan tools yang saya kuasai</p>
+            
+            <div class="skills-container">
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend Development</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.database">Database</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills.frontend">Frontend Development</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skills.tools">Tools & DevOps</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">Proyek-proyek terbaik yang telah saya kerjakan</p>
+
+            <div class="portfolio-grid">
+                <!-- Project 1: BOSCOD Platform -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/boscod-platform.png" alt="BOSCOD Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.boscod.title">BOSCOD Platform</h3>
+                        <span class="portfolio-date">2021 - 2023</span>
+                        <p data-i18n="portfolio.boscod.desc">Platform pengembangan dengan fokus pada backend development dan integrasi sistem.</p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>CodeIgniter 3 (API)</li>
+                                <li>Vue 2</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: HTML5 Music Player -->
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/music-player.jpg" alt="HTML5 Music Player" onerror="this.src='https://via.placeholder.com/400x300/1f444d/ffffff?text=Music+Player'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>HTML5 Music Player with LINE LIFF</h3>
+                        <span class="portfolio-date">2020</span>
+                        <p data-i18n="portfolio.musicplayer.desc">Aplikasi pemutar musik berbasis HTML5 dengan integrasi LINE LIFF API.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML5</span>
+                            <span>JavaScript</span>
+                            <span>LINE API</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3: E-SIKA Lomanis -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/esika-lomanis.png" alt="E-SIKA Lomanis">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.esika.title">E-SIKA Lomanis – Backend REST API</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p data-i18n="portfolio.esika.desc">Layanan API RESTful untuk aplikasi enterprise dengan autentikasi dan manajemen data.</p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel (API)</li>
+                                <li>ApiDog (API Documentation)</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Attendance & Payroll Application -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/pkbm-permata-sunnah.png" alt="Attendance & Payroll Application">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.attendance.title">Attendance & Payroll Application – PKBM Permata Sunnah</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p data-i18n="portfolio.attendance.desc">Sistem backend e-commerce dengan fitur manajemen produk, order, dan payment gateway.</p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel Fullstack & Rest API for Mobile</li>
+                                <li>Bootstrap CSS</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-cta">
+                <a href="assets/Portfolio_Dwiky Anggarda.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> <span data-i18n="portfolio.downloadPortfolio">Download Portfolio Lengkap</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Hubungi Saya</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>dwiky.amin@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+62 838-3252-5360</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact.address">Alamat</h4>
+                            <p>Sidoarjo, Jawa Timur, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4 data-i18n="contact.followMe">Ikuti Saya</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/dwikyanggarda" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/dwikyanggarda" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/DwikyAnggarda" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="contact.form.subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subjek pesan">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.send">Kirim Pesan</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Dwiky<span>.</span></a>
+                    <p data-i18n="footer.tagline">Backend Developer dengan kemampuan Fullstack</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinks">Link Cepat</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
+                        <li><a href="#about" data-i18n="nav.about">Tentang</a></li>
+                        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-i18n="footer.connect">Terhubung</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/dwikyanggarda" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/dwikyanggarda" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/DwikyAnggarda" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dwiky Anggarda Amien. <span data-i18n="footer.rights">Hak Cipta Dilindungi.</span></p>
+            </div>
+        </div>
     </footer>
 
-    <!--<div id="map"></div>
-    <script>
-        var map;
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -7.4709841,
-                    lng: 112.7213075
-                },
-                zoom: 15
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECVtvNbEZVpq3jwfvJ3m3KkjifhPCTKU&callback=initMap"
-        async defer></script> -->
+    <script src="assets/styles/all.js"></script>
 </body>
 
 </html>
