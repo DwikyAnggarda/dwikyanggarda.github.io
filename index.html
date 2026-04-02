@@ -2,36 +2,65 @@
 <html lang="id">
 
 <head>
-    <title>Dwiky Anggarda | Backend Developer</title>
+    <title>Dwiky Anggarda | Jasa Pembuatan Aplikasi & Sistem Bisnis – Sidoarjo Surabaya Gresik Mojokerto Indonesia
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="Dwiky Anggarda Amien - Backend Developer dengan kemampuan Fullstack. Spesialis dalam pengembangan sistem backend yang handal dan skalabel.">
-    <meta name="keywords" content="Backend Developer, Fullstack Developer, Web Developer, Dwiky Anggarda">
+    <meta name="description"
+        content="Jasa pembuatan aplikasi web, aplikasi mobile, aplikasi desktop, iot, dan sistem bisnis di Sidoarjo Surabaya Gresik Mojokerto — Laravel, React, payment gateway QRIS, sistem absensi & penggajian, fintech. Konsultasi gratis!">
+    <meta name="keywords"
+        content="jasa pembuatan aplikasi web, jasa pembuatan aplikasi mobile, jasa pembuatan aplikasi desktop, jasa pembuatan iot, jasa pembuatan sistem bisnis, Laravel, payment gateway QRIS, sistem absensi penggajian, Sidoarjo, Surabaya, Gresik, Mojokerto, Jawa Timur, UMKM, developer Indonesia">
     <meta name="author" content="Dwiky Anggarda Amien">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dwikyanggarda.github.io/">
+    <meta property="og:title" content="Dwiky Anggarda | Jasa Pembuatan Aplikasi & Sistem Bisnis">
+    <meta property="og:description"
+        content="Bisnis butuh sistem digital? Saya bangun — kamu tinggal jalankan. 10+ sistem aktif, 27+ jenis layanan, konsultasi GRATIS. Selesaikan masalahmu di sini! 👋">
+    <meta property="og:image" content="https://dwikyanggarda.github.io/assets/image/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Dwiky Anggarda – Jasa Pembuatan Aplikasi & Sistem Bisnis">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Dwiky Anggarda Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dwikyanggarda">
+    <meta name="twitter:title" content="Dwiky Anggarda | Jasa Pembuatan Aplikasi & Sistem Bisnis">
+    <meta name="twitter:description"
+        content="Bisnis butuh sistem digital? Saya bangun — kamu tinggal jalankan. 10+ sistem aktif, konsultasi GRATIS!">
+    <meta name="twitter:image" content="https://dwikyanggarda.github.io/assets/image/og-image.png">
+
     <link rel="stylesheet" href="assets/styles/style.css">
     <script src="https://kit.fontawesome.com/adc9e05df9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Language Switcher -->
-    <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="id" onclick="switchLanguage('id')">ID</button>
-        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Dwiky<span>.</span></a>
+            <a href="#" class="nav-logo">Dwiky Anggarda<span>.</span></a>
             <button class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link" data-i18n="nav.home">Beranda</a></li>
                 <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
-                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">Layanan</a></li>
                 <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
                 <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+                <li><a href="https://wa.me/6283832525360" target="_blank" class="nav-link nav-cta"
+                        data-i18n="nav.whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li class="nav-lang-switcher">
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="id" onclick="switchLanguage('id')">ID</button>
+                        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -40,28 +69,55 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <span class="hero-greeting" data-i18n="hero.greeting">Halo, saya</span>
-                <h1 class="hero-name">Dwiky Anggarda Amien</h1>
-                <h2 class="hero-title">Backend Developer</h2>
+                <!-- <span class="hero-badge" data-i18n="hero.badge">✅ Tersedia untuk proyek baru</span> -->
+                <h1 class="hero-name" data-i18n="hero.headline">Saya Bantu Bisnis Kamu <span
+                        class="hero-highlight">Tumbuh</span> dengan Sistem yang Tepat</h1>
                 <p class="hero-description" data-i18n="hero.description">
-                    Seorang Backend Developer yang berpengalaman dalam membangun sistem yang handal dan skalabel. 
-                    Meskipun fokus utama saya adalah backend, saya juga memiliki kemampuan fullstack untuk 
-                    mengembangkan solusi end-to-end yang komprehensif.
+                    Sudah membangun 5+ sistem untuk UMKM, sekolah, dan startup Indonesia. Dari sistem ekspedisi,
+                    pembayaran digital, absensi karyawan, hingga aplikasi bisnis custom — saya kerjakan dari awal sampai
+                    jalan.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.viewWork">Lihat Portfolio</a>
-                    <a href="#contact" class="btn btn-outline" data-i18n="hero.contactMe">Hubungi Saya</a>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label" data-i18n="hero.stat1">Sistem Terbangun</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label" data-i18n="hero.stat2">Tahun Pengalaman</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label" data-i18n="hero.stat3">Sektor Industri</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-i18n="hero.stat4">On-Time Delivery</span>
+                    </div>
                 </div>
-                <div class="hero-social">
-                    <a href="https://github.com/dwikyanggarda" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/dwikyanggarda" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:dwiky.amin@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20konsultasi%20gratis%20tentang%20sistem%20bisnis%20saya."
+                        target="_blank" class="btn btn-whatsapp" data-i18n="hero.ctaWa">
+                        <i class="fab fa-whatsapp"></i> Konsultasi Gratis via WhatsApp
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline" data-i18n="hero.ctaPortfolio">Lihat Portfolio</a>
+                </div>
+                <div class="hero-trust" data-i18n="hero.trust">
+                    🔒 Konsultasi gratis, sepuasnya
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-image-wrapper">
-                    <img src="assets/image/cropped_circle_image-1-2 (1)hd.png" alt="Dwiky Anggarda Amien">
+                    <img src="assets/image/cropped_circle_image-1-2 (1)hd.png"
+                        alt="Dwiky Anggarda Amien - Jasa Pembuatan Aplikasi Web">
+                </div>
+                <div class="hero-floating-card card-1">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="hero.card1">Payment Gateway Terintegrasi</span>
+                </div>
+                <div class="hero-floating-card card-2">
+                    <i class="fas fa-users"></i>
+                    <span data-i18n="hero.card2">Sistem Absensi & Payroll</span>
                 </div>
             </div>
         </div>
@@ -71,58 +127,815 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title" data-i18n="about.title">Tentang Saya</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">Konsultan teknologi yang membantu bisnis tumbuh
+                dengan sistem yang tepat</p>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/image/profile.jpg" alt="Dwiky Anggarda" onerror="this.src='assets/image/jaketmerah.jpg'">
+                    <img src="assets/image/jaketmerah.jpg" alt="Dwiky Anggarda - Developer & Konsultan Teknologi"
+                        onerror="this.src='assets/image/cropped_circle_image-1-2 (1)hd.png'">
+                    <!-- <div class="about-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Sidoarjo, Jawa Timur</span>
+                    </div> -->
                 </div>
                 <div class="about-text">
-                    <h3 data-i18n="about.subtitle">Backend Developer & Fullstack Enthusiast</h3>
+                    <h3 data-i18n="about.heading">Hai, saya Dwiky 👋</h3>
                     <p data-i18n="about.paragraph1">
-                        Saya adalah seorang Backend Developer dengan passion yang kuat dalam membangun 
-                        arsitektur sistem yang robust dan efisien. Dengan pengalaman dalam berbagai 
-                        teknologi backend, saya mampu mendesain dan mengimplementasikan API, database, 
-                        serta layanan server-side yang optimal.
+                        Saya adalah seorang programmer yang fokus membantu UMKM, sekolah, klinik, pabrik, startup, dan
+                        bisnis jasa di Indonesia mendapatkan sistem yang benar-benar <strong>sesuai kebutuhan
+                            mereka</strong>.
                     </p>
                     <p data-i18n="about.paragraph2">
-                        Meskipun spesialisasi saya ada di backend, saya juga memiliki kemampuan fullstack 
-                        yang memungkinkan saya untuk memahami dan berkontribusi pada pengembangan frontend 
-                        ketika diperlukan. Hal ini memberikan saya perspektif menyeluruh dalam 
-                        pengembangan aplikasi.
+                        Keahlian saya ada di membangun bisnis yang kuat: sistem pembayaran yang otomatis sinkron tanpa
+                        perlu input manual, pengelolaan karyawan yang rapi dari absensi sampai slip gaji, dan integrasi
+                        antar platform yang membuat operasional bisnis jauh lebih efisien.
                     </p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <i class="fas fa-user"></i>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-credit-card"></i>
                             <div>
-                                <span data-i18n="about.name">Nama</span>
-                                <strong>Dwiky Anggarda Amien</strong>
+                                <strong data-i18n="about.h1title">Payment Gateway & Fintech</strong>
+                                <span data-i18n="about.h1desc">QRIS, Virtual Account, E-wallet terintegrasi
+                                    otomatis</span>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
+                        <div class="highlight-item">
+                            <i class="fas fa-users-cog"></i>
                             <div>
-                                <span>Email</span>
-                                <strong>dwiky.amin@gmail.com</strong>
+                                <strong data-i18n="about.h2title">Sistem Karyawan & Penggajian</strong>
+                                <span data-i18n="about.h2desc">Absensi, cuti, payroll otomatis untuk karyawan</span>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="highlight-item">
+                            <i class="fas fa-plug"></i>
                             <div>
-                                <span data-i18n="about.location">Lokasi</span>
-                                <strong>Sidoarjo, Indonesia</strong>
+                                <strong data-i18n="about.h3title">Integrasi & Otomasi Sistem</strong>
+                                <span data-i18n="about.h3desc">Menghubungkan platform yang sudah ada agar sinkron
+                                    otomatis</span>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
                             <div>
-                                <span data-i18n="about.phone">Telepon</span>
-                                <strong>+62 838-3252-5360</strong>
+                                <strong data-i18n="about.h4title">Aplikasi Web & Mobile-Friendly</strong>
+                                <span data-i18n="about.h4desc">Bisa diakses dari HP, tablet, dan komputer tanpa
+                                    masalah</span>
                             </div>
                         </div>
                     </div>
-                    <a href="assets/CV_Dwiky Anggarda.pdf" class="btn btn-primary" download data-i18n="about.downloadCV">
-                        <i class="fas fa-download"></i> Download CV
+                    <div class="about-actions">
+                        <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20ingin%20konsultasi%20tentang%20kebutuhan%20sistem%20bisnis%20saya."
+                            target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="about.ctaWa">Chat WhatsApp Sekarang</span>
+                        </a>
+                        <a href="assets/Full_CV_Portfolio_Dwiky_Anggarda.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> <span data-i18n="about.downloadPortfolio">Download
+                                Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Layanan Saya</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Pilih solusi yang sesuai dengan kebutuhan bisnis
+                kamu</p>
+
+            <!-- Service Category Tabs -->
+            <div class="service-tabs" id="serviceTabs">
+                <button class="service-tab active" data-filter="all">🔍 Semua</button>
+                <button class="service-tab" data-filter="sistem">🏢 Sistem &amp; Manajemen</button>
+                <button class="service-tab" data-filter="website">🌐 Website &amp; Landing Page</button>
+                <button class="service-tab" data-filter="platform">🎯 Platform Khusus</button>
+                <button class="service-tab" data-filter="integrasi">🔗 Integrasi &amp; Custom</button>
+            </div>
+            <div class="service-tab-count" id="serviceCount"></div>
+
+            <div class="services-grid" id="servicesGrid">
+                <!-- Service 1: Karyawan -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+                    <div class="service-badge" data-i18n="services.popular">Paling Diminati</div>
+                    <h3 data-i18n="services.s1.title">Sistem Manajemen Karyawan</h3>
+                    <p data-i18n="services.s1.desc">Absensi, cuti, lembur, dan penggajian otomatis dalam satu sistem.
+                        Cocok untuk perusahaan dengan 10–500+ karyawan.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.s1.f1"><i class="fas fa-check"></i> Absensi via scan QR / GPS</li>
+                        <li data-i18n="services.s1.f2"><i class="fas fa-check"></i> Perhitungan gaji &amp; tunjangan
+                            otomatis</li>
+                        <li data-i18n="services.s1.f3"><i class="fas fa-check"></i> Slip gaji digital &amp; laporan
+                            bulanan</li>
+                        <li data-i18n="services.s1.f4"><i class="fas fa-check"></i> Dashboard manajemen real-time</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services.fitLabel">Cocok untuk:</span>
+                        <span class="fit-tags" data-i18n="services.s1.fit">Sekolah, Pesantren, Koperasi, Pabrik,
+                            Klinik</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from" data-i18n="services.priceFree">Konsultasi Gratis</span>
+                        <span class="price-value" data-i18n="services.s1.price">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Karyawan.%20Bisa%20cerita%20lebih%20lanjut%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="services.cta">Tanya &amp; Konsultasi</span>
                     </a>
                 </div>
+
+                <!-- Service 2: Kasir -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-qrcode"></i></div>
+                    <h3 data-i18n="services.s2.title">Sistem Kasir &amp; Pembayaran Digital</h3>
+                    <p data-i18n="services.s2.desc">Terima pembayaran QRIS, Virtual Account, dan E-wallet. Rekonsiliasi
+                        otomatis tanpa input manual. Cocok untuk toko, warung, hingga marketplace.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.s2.f1"><i class="fas fa-check"></i> Integrasi QRIS, VA, E-wallet</li>
+                        <li data-i18n="services.s2.f2"><i class="fas fa-check"></i> Rekonsiliasi transaksi otomatis</li>
+                        <li data-i18n="services.s2.f3"><i class="fas fa-check"></i> Laporan penjualan harian/bulanan
+                        </li>
+                        <li data-i18n="services.s2.f4"><i class="fas fa-check"></i> Notifikasi pembayaran real-time</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services.fitLabel">Cocok untuk:</span>
+                        <span class="fit-tags" data-i18n="services.s2.fit">Toko Online, Ekspedisi, Marketplace,
+                            UMKM</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from" data-i18n="services.priceFree">Konsultasi Gratis</span>
+                        <span class="price-value" data-i18n="services.s2.price">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Kasir%20dan%20Pembayaran%20Digital.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="services.cta">Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 4: Integrasi -->
+                <div class="service-card" data-category="integrasi">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3 data-i18n="services.s4.title">Integrasi & Koneksi Antar Sistem</h3>
+                    <p data-i18n="services.s4.desc">Sudah punya sistem tapi tidak sinkron satu sama lain? Saya
+                        sambungkan sistem lama kamu dengan platform baru tanpa perlu buang sistem yang ada.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.s4.f1"><i class="fas fa-check"></i> Integrasi API antar platform</li>
+                        <li data-i18n="services.s4.f2"><i class="fas fa-check"></i> Sinkronisasi data otomatis</li>
+                        <li data-i18n="services.s4.f3"><i class="fas fa-check"></i> Migrasi data yang aman</li>
+                        <li data-i18n="services.s4.f4"><i class="fas fa-check"></i> Optimasi performa sistem existing
+                        </li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services.fitLabel">Cocok untuk:</span>
+                        <span class="fit-tags" data-i18n="services.s4.fit">Bisnis dengan 2+ sistem terpisah, Retail,
+                            Logistik</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from" data-i18n="services.priceFree">Konsultasi Gratis</span>
+                        <span class="price-value" data-i18n="services.s4.price">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20butuh%20bantuan%20integrasi%20antar%20sistem%20di%20bisnis%20saya."
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="services.cta">Tanya & Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 5: SIMS -->
+                <div class="service-card" data-category="platform">
+                    <div class="service-icon"><i class="fas fa-school"></i></div>
+                    <h3>Sistem Informasi Manajemen Sekolah</h3>
+                    <p>Kelola siswa, guru, kelas, nilai, absensi, dan keuangan sekolah dalam satu platform terpadu.
+                        Admin tidak perlu lagi bolak-balik antar spreadsheet yang membingungkan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Manajemen siswa, guru & kelas</li>
+                        <li><i class="fas fa-check"></i> Nilai & rapor digital otomatis</li>
+                        <li><i class="fas fa-check"></i> Absensi harian terintegrasi</li>
+                        <li><i class="fas fa-check"></i> Laporan keuangan & SPP</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">SD, SMP, SMA, SMK, Pesantren, Madrasah</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Informasi%20Manajemen%20Sekolah.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 6: Gudang & Stok -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Sistem Manajemen Gudang &amp; Stok</h3>
+                    <p>Tidak perlu lagi kecemasan stok habis tiba-tiba atau barang menumpuk tanpa terdeteksi. Pantau
+                        keluar-masuk barang secara real-time dari mana saja.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tracking stok masuk &amp; keluar real-time</li>
+                        <li><i class="fas fa-check"></i> Notifikasi otomatis stok hampir habis</li>
+                        <li><i class="fas fa-check"></i> Manajemen multi-gudang &amp; multi-lokasi</li>
+                        <li><i class="fas fa-check"></i> Laporan persediaan &amp; audit trail</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Distributor, Toko Material, Apotek, Retail, Pabrik</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Gudang%20dan%20Stok.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 7: PPDB -->
+                <div class="service-card" data-category="platform">
+                    <div class="service-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Sistem PPDB Sekolah Online</h3>
+                    <p>Buka pendaftaran siswa baru secara online — orang tua daftar dari rumah, panitia pantau dari mana
+                        saja, pengumuman otomatis. Tidak ada lagi antrean panjang di depan sekolah.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Formulir pendaftaran online 24 jam</li>
+                        <li><i class="fas fa-check"></i> Upload dokumen &amp; verifikasi digital</li>
+                        <li><i class="fas fa-check"></i> Seleksi &amp; pengumuman hasil otomatis</li>
+                        <li><i class="fas fa-check"></i> Pembayaran uang pendaftaran digital</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">SD, SMP, SMA, SMK, Pesantren, Perguruan Tinggi</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20PPDB%20Online.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 8: LMS -->
+                <div class="service-card" data-category="platform">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Platform LMS (Learning Management System)</h3>
+                    <p>Jadikan kelas kamu bisa diakses siapa saja, kapan saja. Distribusikan materi, quiz, tugas, dan
+                        sertifikat — semua digital, semua otomatis.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Upload video, modul &amp; materi belajar</li>
+                        <li><i class="fas fa-check"></i> Kuis &amp; ujian online dengan nilai otomatis</li>
+                        <li><i class="fas fa-check"></i> Sertifikat digital yang bisa diverifikasi</li>
+                        <li><i class="fas fa-check"></i> Progress tracking per siswa/peserta</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Lembaga Kursus, Sekolah, Pelatihan Korporat, Bisnis Online</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Platform%20LMS.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 9: Taaruf / Biro Jodoh -->
+                <div class="service-card" data-category="platform">
+                    <div class="service-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Sistem Biro Jodoh &amp; Taaruf Online</h3>
+                    <p>Platform perkenalan yang aman, terverifikasi, dan sesuai syariat. Bantu anggota menemukan
+                        pasangan yang tepat dengan fitur filter cerdas dan mediasi admin yang transparan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Registrasi &amp; verifikasi anggota ketat</li>
+                        <li><i class="fas fa-check"></i> Filter kriteria pasangan yang detail</li>
+                        <li><i class="fas fa-check"></i> Sistem mediasi &amp; wali digital</li>
+                        <li><i class="fas fa-check"></i> Chat aman dengan pengawasan admin</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Komunitas Muslim, Pesantren, Yayasan Sosial, Komunitas Hijrah</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Biro%20Jodoh%20Online.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 10: Manajemen Kos -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-bed"></i></div>
+                    <h3>Sistem Manajemen Kos</h3>
+                    <p>Kelola kamar, tagihan, dan penghuni kos kamu tanpa ribet. Sistem mengirim tagihan otomatis setiap
+                        bulan — kamu tinggal terima bayaran tanpa perlu ngetuk pintu satu per satu.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Manajemen kamar &amp; penghuni</li>
+                        <li><i class="fas fa-check"></i> Tagihan bulanan &amp; notifikasi otomatis</li>
+                        <li><i class="fas fa-check"></i> Pembayaran QRIS / transfer langsung</li>
+                        <li><i class="fas fa-check"></i> Laporan pemasukan real-time</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Pemilik Kos, Kontrakan, Apartemen Mini, Homestay</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Kos.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 11: Akuntansi + Pajak -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Sistem Akuntansi &amp; Manajemen Pajak</h3>
+                    <p>Laporan keuangan yang rapi, jurnal otomatis, dan perhitungan pajak yang akurat — semua di satu
+                        tempat. Tidak perlu lagi pusing di akhir tahun pajak.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Jurnal &amp; buku besar otomatis</li>
+                        <li><i class="fas fa-check"></i> Laporan laba-rugi &amp; neraca</li>
+                        <li><i class="fas fa-check"></i> Perhitungan PPh 21 &amp; PPN</li>
+                        <li><i class="fas fa-check"></i> Ekspor laporan siap audit</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">UMKM, CV/PT, Yayasan, Koperasi, Konsultan Pajak</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Akuntansi%20dan%20Pajak.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 12: CRM -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Sistem CRM (Customer Relationship Management)</h3>
+                    <p>Jangan biarkan prospek kabur hanya karena tidak sempat ditindaklanjuti. CRM memastikan setiap
+                        lead tercatat, terpantau, dan difollow-up tepat waktu.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Database pelanggan &amp; prospek terpusat</li>
+                        <li><i class="fas fa-check"></i> Pipeline penjualan &amp; deal tracking</li>
+                        <li><i class="fas fa-check"></i> Pengingat &amp; jadwal follow-up otomatis</li>
+                        <li><i class="fas fa-check"></i> Analitik konversi &amp; performa tim sales</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Properti, Asuransi, Agen, B2B Sales, Bisnis Jasa</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20CRM.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 13: Klinik -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-clinic-medical"></i></div>
+                    <h3>Sistem Manajemen Klinik</h3>
+                    <p>Antrian pasien tertib, rekam medis aman, dan tagihan akurat — tanpa kertas berceceran. Pasien
+                        lebih puas, dokter lebih fokus, administrasi lebih ringan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Antrian &amp; reservasi pasien online</li>
+                        <li><i class="fas fa-check"></i> Rekam medis digital &amp; aman</li>
+                        <li><i class="fas fa-check"></i> Manajemen obat &amp; apotek internal</li>
+                        <li><i class="fas fa-check"></i> Tagihan &amp; laporan keuangan klinik</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Klinik Umum, Klinik Gigi, Puskesmas, Bidan, Dokter Praktek</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Klinik.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 14: Laundry -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-tshirt"></i></div>
+                    <h3>Sistem Manajemen Laundry</h3>
+                    <p>Dari masuk cucian, proses, sampai pengambilan — semua terlacak otomatis. Pelanggan dapat
+                        notifikasi WA saat cucian siap. Tidak ada lagi cucian tertukar atau hilang.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tracking order masuk hingga selesai</li>
+                        <li><i class="fas fa-check"></i> Notifikasi WhatsApp otomatis ke pelanggan</li>
+                        <li><i class="fas fa-check"></i> Manajemen pelanggan &amp; riwayat transaksi</li>
+                        <li><i class="fas fa-check"></i> Laporan omzet harian &amp; bulanan</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Laundry Kiloan, Laundry Express, Dry Clean, Laundry Kos</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Laundry.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 15: Event Organizer -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Sistem Manajemen Event Organizer</h3>
+                    <p>Kelola registrasi peserta, tiket, jadwal, vendor, dan laporan keuangan event dalam satu platform.
+                        Fokus ke konten acara, urusan teknis biar sistem yang tangani.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Registrasi &amp; tiket event online</li>
+                        <li><i class="fas fa-check"></i> Scan QR code untuk check-in peserta</li>
+                        <li><i class="fas fa-check"></i> Manajemen vendor &amp; jadwal acara</li>
+                        <li><i class="fas fa-check"></i> Laporan keuangan &amp; peserta real-time</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">EO, Komunitas, Seminar, Wedding Organizer, Festival</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Event%20Organizer.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 16: Koperasi Simpan Pinjam -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <h3>Sistem Manajemen Koperasi Simpan Pinjam</h3>
+                    <p>Kelola simpanan, pinjaman, angsuran, dan SHU anggota dengan akurat dan transparan. Pengurus lebih
+                        mudah, anggota lebih percaya.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Manajemen simpanan pokok, wajib &amp; sukarela</li>
+                        <li><i class="fas fa-check"></i> Pengajuan &amp; persetujuan pinjaman digital</li>
+                        <li><i class="fas fa-check"></i> Angsuran &amp; tagihan otomatis</li>
+                        <li><i class="fas fa-check"></i> Laporan SHU &amp; neraca koperasi</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">KSP, KSPPS/BMT, Koperasi Karyawan, Arisan Digital</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Koperasi%20Simpan%20Pinjam.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 17: Pre-order -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Sistem Manajemen Pre-Order &amp; PO</h3>
+                    <p>Terima pesanan bervolume besar dengan konfirmasi, pembayaran DP, dan notifikasi update otomatis.
+                        Tidak ada lagi order yang terlewat atau pelanggan yang tidak dapat kabar.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Form PO online dengan konfirmasi otomatis</li>
+                        <li><i class="fas fa-check"></i> Pembayaran DP &amp; pelunasan digital</li>
+                        <li><i class="fas fa-check"></i> Update status produksi ke pelanggan</li>
+                        <li><i class="fas fa-check"></i> Dashboard rekap order &amp; jadwal pengiriman</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Produsen, UMKM Makanan/Fashion, Toko Custom, Dropshipper</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Pre-Order%20dan%20PO.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 18: Posyandu -->
+                <div class="service-card" data-category="sistem">
+                    <div class="service-icon"><i class="fas fa-baby"></i></div>
+                    <h3>Sistem Manajemen Posyandu</h3>
+                    <p>Data tumbuh kembang bayi dan balita tercatat rapi, laporan ke puskesmas tinggal ekspor, ibu-ibu
+                        dapat notifikasi jadwal imunisasi. Kader posyandu lebih mudah, data lebih akurat.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Data balita, ibu hamil &amp; lansia</li>
+                        <li><i class="fas fa-check"></i> Pencatatan berat, tinggi &amp; status gizi</li>
+                        <li><i class="fas fa-check"></i> Jadwal &amp; notifikasi imunisasi otomatis</li>
+                        <li><i class="fas fa-check"></i> Laporan ke Puskesmas/Dinkes mudah</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Posyandu, Puskesmas, Kelurahan, Desa, Dinas Kesehatan</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Sistem%20Manajemen%20Posyandu.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service 3: Custom App -->
+                <div class="service-card" data-category="integrasi">
+                    <div class="service-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3 data-i18n="services.s3.title">Aplikasi Custom Sesuai Kebutuhan</h3>
+                    <p data-i18n="services.s3.desc">Punya ide sistem atau masalah bisnis yang unik? Saya bantu wujudkan
+                        dari nol — mulai dari desain alur, pengembangan, hingga deployment dan maintenance.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.s3.f1"><i class="fas fa-check"></i> Analisis kebutuhan bisnis gratis
+                        </li>
+                        <li data-i18n="services.s3.f2"><i class="fas fa-check"></i> Pengembangan web app full-stack</li>
+                        <li data-i18n="services.s3.f3"><i class="fas fa-check"></i> Mobile-friendly &amp; responsive
+                        </li>
+                        <li data-i18n="services.s3.f4"><i class="fas fa-check"></i> Support &amp; maintenance
+                            pasca-launch</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services.fitLabel">Cocok untuk:</span>
+                        <span class="fit-tags" data-i18n="services.s3.fit">Startup, Klinik, Bisnis Jasa, Rental,
+                            Properti</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from" data-i18n="services.priceFree">Konsultasi Gratis</span>
+                        <span class="price-value" data-i18n="services.s3.price">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20punya%20ide%20aplikasi%20yang%20ingin%20saya%20diskusikan."
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="services.cta">Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Website Services Group -->
+                <!-- Service W1: Landing Page -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Landing Page Konversi Tinggi</h3>
+                    <p>Halaman pertama yang dilihat calon pelanggan kamu. Kami rancang untuk satu tujuan: bikin mereka
+                        langsung klik, daftar, atau beli — bukan sekedar lihat lalu pergi.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Desain yang meyakinkan &amp; elegan</li>
+                        <li><i class="fas fa-check"></i> Copy persuasif yang memancing aksi</li>
+                        <li><i class="fas fa-check"></i> Integrasi WA / form / payment</li>
+                        <li><i class="fas fa-check"></i> Loading super cepat &amp; mobile-friendly</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Produk Baru, Promo Event, Iklan Google/Meta, Webinar</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20jasa%20Landing%20Page.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W2: Company Profile -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3>Website Company Profile</h3>
+                    <p>Kesan pertama bisnis kamu di dunia digital. Website company profile yang profesional membuat
+                        calon klien langsung percaya sebelum mereka sempat ragu.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Desain profesional &amp; branded</li>
+                        <li><i class="fas fa-check"></i> Halaman: Home, About, Service, Contact</li>
+                        <li><i class="fas fa-check"></i> Optimasi SEO lokal</li>
+                        <li><i class="fas fa-check"></i> Integrasi Google Maps &amp; WhatsApp</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">CV/PT, Kantor Konsultan, Kontraktor, Agen Properti, UMKM</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Company%20Profile.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W3: Toko Online -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Website Toko Online</h3>
+                    <p>Jual produk kamu 24 jam tanpa karyawan tambahan. Pelanggan bisa browsing, pilih, bayar, dan
+                        terima konfirmasi otomatis — kamu fokus packing dan pengiriman.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Katalog produk dengan foto &amp; deskripsi</li>
+                        <li><i class="fas fa-check"></i> Keranjang &amp; checkout yang mudah</li>
+                        <li><i class="fas fa-check"></i> Integrasi payment gateway QRIS/VA</li>
+                        <li><i class="fas fa-check"></i> Manajemen stok &amp; pesanan</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">UMKM, Reseller, Produsen, Brand Fashion, F&amp;B</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Toko%20Online.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W4: Blog -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Website Blog &amp; Personal Branding</h3>
+                    <p>Bangun otoritas dan kepercayaan lewat konten. Blog yang SEO-friendly membantu kamu ditemukan di
+                        Google dan menjadikanmu ahli di bidangmu tanpa perlu iklan berbayar.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Desain clean &amp; nyaman dibaca</li>
+                        <li><i class="fas fa-check"></i> Optimasi SEO on-page dari awal</li>
+                        <li><i class="fas fa-check"></i> Kategori, tag, &amp; pencarian konten</li>
+                        <li><i class="fas fa-check"></i> Komentar &amp; share social media</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Penulis, Konsultan, Coach, Blogger, Content Creator</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Blog.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W5: Berita/Media -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-newspaper"></i></div>
+                    <h3>Website Berita &amp; Media Online</h3>
+                    <p>Portal berita yang cepat, rapi, dan bisa dikelola tim editorial tanpa perlu otak-atik kode.
+                        Tulisan terbaru langsung tampil, pembaca terus kembali.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> CMS editor berita yang mudah dipakai</li>
+                        <li><i class="fas fa-check"></i> Kategori, tag, &amp; breaking news</li>
+                        <li><i class="fas fa-check"></i> AMP &amp; loading cepat untuk mobile</li>
+                        <li><i class="fas fa-check"></i> Monetisasi iklan &amp; konten premium</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Media Lokal, Pers Kampus, Redaksi Komunitas, Portal Daerah</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Berita%20dan%20Media%20Online.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W6: Portfolio -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-images"></i></div>
+                    <h3>Website Portofolio Profesional</h3>
+                    <p>Tampilkan karya terbaik kamu dengan desain yang memukau. Klien potensial hanya butuh 10 detik
+                        lihat website kamu untuk memutuskan: ini orangnya.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Desain premium &amp; personal branding</li>
+                        <li><i class="fas fa-check"></i> Galeri proyek dengan detail menarik</li>
+                        <li><i class="fas fa-check"></i> Halaman tentang, keahlian &amp; kontak</li>
+                        <li><i class="fas fa-check"></i> Responsif &amp; ringan di semua perangkat</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Freelancer, Desainer, Fotografer, Developer, Arsitek</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Portofolio.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W7: Pendidikan -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Website Pendidikan &amp; Lembaga</h3>
+                    <p>Wajah digital sekolah atau universitas kamu. Informasi pendaftaran, program studi, berita, dan
+                        galeri tersaji rapi — orang tua dan calon siswa langsung yakin.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Profil lembaga &amp; program unggulan</li>
+                        <li><i class="fas fa-check"></i> Pengumuman &amp; berita sekolah</li>
+                        <li><i class="fas fa-check"></i> Galeri kegiatan &amp; prestasi siswa</li>
+                        <li><i class="fas fa-check"></i> Form pendaftaran &amp; kontak online</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Sekolah, Pesantren, Kursus, Bimbel, Perguruan Tinggi</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Pendidikan.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W8: Komunitas/Forum -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Website Komunitas &amp; Forum</h3>
+                    <p>Buka ruang diskusi yang hidup di bawah brand kamu sendiri. Anggota bergabung, berbagi, dan saling
+                        membantu — membangun loyalitas yang tidak bisa dibeli iklan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Forum diskusi &amp; thread topik</li>
+                        <li><i class="fas fa-check"></i> Sistem membership &amp; level anggota</li>
+                        <li><i class="fas fa-check"></i> Notifikasi &amp; aktivitas anggota</li>
+                        <li><i class="fas fa-check"></i> Panel moderasi yang mudah dikelola</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Komunitas Hobi, Alumni, Organisasi, Forum Bisnis, Ikatan Profesi</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Komunitas%20atau%20Forum.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+
+                <!-- Service W9: Pemerintah/Instansi -->
+                <div class="service-card" data-category="website">
+                    <div class="service-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Website Pemerintah &amp; Instansi Resmi</h3>
+                    <p>Wujudkan layanan publik yang transparan dan mudah diakses. Warga bisa cari informasi, unduh
+                        dokumen, dan kirim pengaduan tanpa perlu antre di kantor.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Informasi layanan publik terstruktur</li>
+                        <li><i class="fas fa-check"></i> Download dokumen &amp; arsip resmi</li>
+                        <li><i class="fas fa-check"></i> Form pengaduan &amp; aspirasi online</li>
+                        <li><i class="fas fa-check"></i> Standar aksesibilitas &amp; keamanan</li>
+                    </ul>
+                    <div class="service-fit">
+                        <span class="fit-label">Cocok untuk:</span>
+                        <span class="fit-tags">Desa, Kelurahan, Dinas, BUMN, Instansi Pemerintah</span>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-from">Konsultasi Gratis</span>
+                        <span class="price-value">Harga sesuai kebutuhan</span>
+                    </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20tertarik%20dengan%20Website%20Pemerintah%20atau%20Instansi.%20Bisa%20konsultasi%3F"
+                        target="_blank" class="btn btn-service">
+                        <i class="fab fa-whatsapp"></i> <span>Tanya &amp; Konsultasi</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="services-note">
+                <i class="fas fa-info-circle"></i>
+                <span data-i18n="services.note">Semua harga adalah estimasi awal. Harga final ditentukan setelah diskusi
+                    kebutuhan. <strong>Konsultasi gratis!</strong></span>
             </div>
         </div>
     </section>
@@ -130,110 +943,135 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title" data-i18n="skills.title">Keahlian Teknis</h2>
-            <p class="section-subtitle" data-i18n="skills.subtitle">Teknologi dan tools yang saya kuasai</p>
-            
+            <h2 class="section-title" data-i18n="skills.title">Teknologi yang Digunakan</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">Stack teknologi proven yang saya gunakan untuk
+                membangun sistem bisnis kamu</p>
+
             <div class="skills-container">
                 <!-- Backend Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend Development</span></h3>
+                    <h3><i class="fas fa-server"></i> <span data-i18n="skills.backend">Backend & Framework</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-php"></i>
                             <span>PHP</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-code"></i>
                             <span>Express.js</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-laravel"></i>
-                            <span>Laravel</span>
+                            <i class="fas fa-code"></i>
+                            <span>Nest.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Golang</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Database Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.database">Database</span></h3>
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.database">Database & Cloud</span></h3>
                     <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
                             <span>MySQL</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-leaf"></i>
                             <span>MongoDB</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Firebase</span>
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Supabase</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Frontend Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills.frontend">Frontend Development</span></h3>
+                    <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills.frontend">Frontend & UI</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                            <i class="fab fa-react"></i>
+                            <span>React / Next.js</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue / Nuxt.js</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-js"></i>
                             <span>JavaScript</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
+                            <i class="fas fa-code"></i>
+                            <span>TypeScript</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
+                            <i class="fas fa-code"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Kotlin</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tools & Others -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> <span data-i18n="skills.tools">Tools & DevOps</span></h3>
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skills.tools">Integrasi & DevOps</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payment Gateway</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-docker"></i>
                             <span>Docker</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-code-branch"></i>
@@ -248,116 +1086,570 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
-            <p class="section-subtitle" data-i18n="portfolio.subtitle">Proyek-proyek terbaik yang telah saya kerjakan</p>
+            <h2 class="section-title" data-i18n="portfolio.title">Proyek yang Sudah Dikerjakan</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">Sistem nyata yang sudah berjalan dan membantu
+                bisnis klien</p>
 
             <div class="portfolio-grid">
                 <!-- Project 1: BOSCOD Platform -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="assets/image/boscod-platform.png" alt="BOSCOD Platform">
+                        <img src="assets/image/boscod.png" alt="BOSCOD Platform - Sistem Pengiriman COD"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
                             </div>
+                        </div>
+                        <div class="portfolio-category-badge" data-i18n="portfolio.boscod.category">Fintech & Logistik
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h3 data-i18n="portfolio.boscod.title">BOSCOD Platform</h3>
-                        <span class="portfolio-date">2021 - 2023</span>
-                        <p data-i18n="portfolio.boscod.desc">Platform pengembangan dengan fokus pada backend development dan integrasi sistem.</p>
+                        <span class="portfolio-date">2021 – 2023</span>
+                        <p class="portfolio-problem" data-i18n="portfolio.boscod.problem">
+                            <strong data-i18n="portfolio.problemLabel">Masalah:</strong> Rekonsiliasi pembayaran COD
+                            manual yang rawan error dan memakan waktu berjam-jam setiap hari.
+                        </p>
+                        <p class="portfolio-result" data-i18n="portfolio.boscod.result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> 50.000+ transaksi/bulan berjalan
+                            otomatis. Kesalahan rekonsiliasi turun 60–75%.
+                        </p>
                         <div class="portfolio-tech">
                             <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
                             <ul class="portfolio-tech-list">
                                 <li>CodeIgniter 3 (API)</li>
-                                <li>Vue 2</li>
-                                <li>PostgreSQL</li>
+                                <li>Vue.js</li>
+                                <li>PostgreSQL (Database)</li>
+                                <li>5-9 Payment Gateway</li>
                             </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong data-i18n="portfolio.fitLabel">Cocok untuk:</strong> <span
+                                    data-i18n="portfolio.boscod.fit">Ekspedisi, Marketplace COD, Bisnis
+                                    Online</span></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2: HTML5 Music Player -->
-                <!-- <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="assets/image/music-player.jpg" alt="HTML5 Music Player" onerror="this.src='https://via.placeholder.com/400x300/1f444d/ffffff?text=Music+Player'">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>HTML5 Music Player with LINE LIFF</h3>
-                        <span class="portfolio-date">2020</span>
-                        <p data-i18n="portfolio.musicplayer.desc">Aplikasi pemutar musik berbasis HTML5 dengan integrasi LINE LIFF API.</p>
-                        <div class="portfolio-tags">
-                            <span>HTML5</span>
-                            <span>JavaScript</span>
-                            <span>LINE API</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Project 3: E-SIKA Lomanis -->
+                <!-- Project 2: E-SIKA Lomanis -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="assets/image/esika-lomanis.png" alt="E-SIKA Lomanis">
+                        <img src="assets/image/esika.png" alt="E-SIKA Lomanis - Sistem Izin Kerja Digital"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
                             </div>
+                        </div>
+                        <div class="portfolio-category-badge" data-i18n="portfolio.esika.category">Manajemen Izin Kerja
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3 data-i18n="portfolio.esika.title">E-SIKA Lomanis – Backend REST API</h3>
+                        <h3 data-i18n="portfolio.esika.title">E-SIKA Lomanis</h3>
                         <span class="portfolio-date">2024</span>
-                        <p data-i18n="portfolio.esika.desc">Layanan API RESTful untuk aplikasi enterprise dengan autentikasi dan manajemen data.</p>
+                        <p class="portfolio-problem" data-i18n="portfolio.esika.problem">
+                            <strong data-i18n="portfolio.problemLabel">Masalah:</strong> Proses pengajuan izin kerja
+                            masih manual via dokumen fisik, lambat, dan sulit dilacak statusnya.
+                        </p>
+                        <p class="portfolio-result" data-i18n="portfolio.esika.result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Waktu persetujuan izin turun
+                            50–70% untuk 100+ pengguna aktif.
+                        </p>
                         <div class="portfolio-tech">
                             <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
                             <ul class="portfolio-tech-list">
                                 <li>Laravel (API)</li>
+                                <li>Nuxt.js</li>
                                 <li>ApiDog (API Documentation)</li>
-                                <li>PostgreSQL</li>
+                                <li>PostgreSQL (Database)</li>
                             </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong data-i18n="portfolio.fitLabel">Cocok untuk:</strong> <span
+                                    data-i18n="portfolio.esika.fit">Perusahaan Manufaktur, Konstruksi, HR
+                                    Digital</span></span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4: Attendance & Payroll Application -->
+                <!-- Project 3: Attendance & Payroll PKBM -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="assets/image/pkbm-permata-sunnah.png" alt="Attendance & Payroll Application">
+                        <img src="assets/image/persun.png" alt="Sistem Absensi & Penggajian PKBM Permata Sunnah"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
-                                <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
                             </div>
                         </div>
+                        <div class="portfolio-category-badge" data-i18n="portfolio.attendance.category">Absensi &
+                            Penggajian</div>
                     </div>
                     <div class="portfolio-info">
-                        <h3 data-i18n="portfolio.attendance.title">Attendance & Payroll Application – PKBM Permata Sunnah</h3>
+                        <h3 data-i18n="portfolio.attendance.title">Sistem Absensi & Penggajian – PKBM Permata Sunnah
+                        </h3>
                         <span class="portfolio-date">2024</span>
-                        <p data-i18n="portfolio.attendance.desc">Sistem backend e-commerce dengan fitur manajemen produk, order, dan payment gateway.</p>
+                        <p class="portfolio-problem" data-i18n="portfolio.attendance.problem">
+                            <strong data-i18n="portfolio.problemLabel">Masalah:</strong> Pencatatan kehadiran dan
+                            penggajian 85 karyawan dilakukan manual di spreadsheet, rawan salah hitung dan memakan waktu
+                            tiap akhir bulan.
+                        </p>
+                        <p class="portfolio-result" data-i18n="portfolio.attendance.result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Perhitungan payroll 85 karyawan
+                            selesai hanya dalam beberapa detik. Tidak ada lagi salah hitung manual.
+                        </p>
                         <div class="portfolio-tech">
                             <span class="portfolio-tech-label" data-i18n="portfolio.techStack">Tech Stack</span>
                             <ul class="portfolio-tech-list">
-                                <li>Laravel Fullstack & Rest API for Mobile</li>
-                                <li>Bootstrap CSS</li>
-                                <li>PostgreSQL</li>
+                                <li>Laravel Fullstack (Web)</li>
+                                <li>Laravel REST API (for Mobile)</li>
+                                <li>Flutter (Mobile)</li>
+                                <li>PostgreSQL (Database)</li>
                             </ul>
                         </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong data-i18n="portfolio.fitLabel">Cocok untuk:</strong> <span
+                                    data-i18n="portfolio.attendance.fit">Sekolah, Pesantren, Koperasi, Lembaga
+                                    Pendidikan</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: SIMS -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/sistem-informasi-penomoran-dokumen.png"
+                            alt="Sistem Informasi Manajemen Sekolah"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Manajemen Sekolah</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Informasi Manajemen Sekolah</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Data siswa, nilai, absensi, dan keuangan tersebar di banyak file
+                            spreadsheet yang tidak terhubung — membuat admin kewalahan dan rawan kesalahan data.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Semua proses administrasi sekolah
+                            terintegrasi dalam satu platform. Waktu pembuatan laporan turun drastis dari harian ke
+                            real-time.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel Fullstack</li>
+                                <li>PostgreSQL (Database)</li>
+                                <li>REST API Mobile</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> SD, SMP, SMA, SMK, Pesantren, Madrasah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Gudang & Stok -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/stok-aset.png" alt="Sistem Manajemen Gudang & Stok"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Manajemen Gudang &amp; Stok</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Manajemen Gudang &amp; Stok</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Pencatatan stok masih manual di buku fisik — sering terjadi
+                            selisih stok, barang kadaluarsa tidak terdeteksi, dan restock selalu terlambat.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Stok terpantau real-time dengan
+                            notifikasi otomatis saat hampir habis. Selisih stok turun hingga 90% dibanding pencatatan
+                            manual.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel Fullstack</li>
+                                <li>PostgreSQL (Database)</li>
+                                <li>REST API</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> Distributor, Toko Material, Apotek, Retail,
+                                Pabrik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: PPDB -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/ppdb.png" alt="Sistem PPDB Sekolah Online"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">PPDB Online</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem PPDB Sekolah Online</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Pendaftaran siswa baru masih dilakukan manual — antrian panjang,
+                            dokumen berceceran, dan panitia kewalahan memproses ratusan pendaftar dalam waktu singkat.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Proses pendaftaran 100% online.
+                            Tidak ada lagi antrean fisik — orang tua daftar dari rumah, pengumuman otomatis langsung ke
+                            email/WhatsApp.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel Fullstack</li>
+                                <li>Vue.js</li>
+                                <li>PostgreSQL (Database)</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> SD, SMP, SMA, SMK, Pesantren, Perguruan Tinggi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: LMS -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/lms.png" alt="Platform Learning Management System"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Learning Management System</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Platform LMS (Learning Management System)</h3>
+                        <span class="portfolio-date">2024 – 2025</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Materi pembelajaran tersebar di WhatsApp dan Google Drive — sulit
+                            dilacak, tidak ada ujian terstruktur, dan tidak ada laporan progres belajar peserta.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Pengajar distribusikan materi,
+                            buat kuis, dan pantau progres siswa dalam satu platform. Sertifikat digital diterbitkan
+                            otomatis setelah lulus.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel (Backend API)</li>
+                                <li>Vue.js / Nuxt.js</li>
+                                <li>PostgreSQL (Database)</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> Lembaga Kursus, Sekolah, Pelatihan Korporat, Bisnis
+                                Online</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Taaruf / Biro Jodoh -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/taaruf.png" alt="Sistem Biro Jodoh & Taaruf Online"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" title="View Project"
+                                    onclick="comingSoon(); return false;"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Biro Jodoh &amp; Taaruf</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistem Biro Jodoh &amp; Taaruf Online</h3>
+                        <span class="portfolio-date">2024 – 2025</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Komunitas taaruf masih dikelola via grup WhatsApp — data anggota
+                            tidak terstruktur, proses mediasi tidak transparan, dan privasi anggota sulit dijaga.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Platform taaruf terstruktur dengan
+                            verifikasi anggota, filter kriteria, dan mediasi admin yang transparan. Privasi anggota
+                            terjaga sepenuhnya.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>Laravel (Backend API)</li>
+                                <li>Vue.js</li>
+                                <li>PostgreSQL (Database)</li>
+                                <li>Flutter (Mobile)</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> Komunitas Muslim, Pesantren, Yayasan Sosial, Komunitas
+                                Hijrah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Integritas Research and Consulting -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/irc.png" alt="Website Integritas Research and Consulting"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="https://www.integritasrc.com" target="_blank" class="portfolio-link"
+                                    title="Lihat Website"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Company Profile</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Integritas Research &amp; Consulting</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Perusahaan konsultan riset tidak punya kehadiran digital yang
+                            kredibel — calon klien tidak bisa memverifikasi kompetensi dan reputasi tanpa bertemu
+                            langsung.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Website profesional yang
+                            merepresentasikan kredibilitas perusahaan konsultan riset. Calon klien langsung mendapat
+                            gambaran lengkap layanan, tim, dan rekam jejak tanpa perlu tatap muka.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>HTML / CSS / JS</li>
+                                <li>Laravel Backend</li>
+                                <li>SEO Optimized</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> Konsultan, Lembaga Riset, Firma Hukum, Agensi</span>
+                        </div>
+                        <a href="https://www.integritasrc.com" target="_blank" class="btn btn-outline-sm">
+                            <i class="fas fa-external-link-alt"></i> Lihat Website Live
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 10: Mutiara Solusi Cipta -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/image/mutiara-solusi-cipta.png" alt="Website Mutiara Solusi Cipta"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="https://mutiarasolusicipta.com" target="_blank" class="portfolio-link"
+                                    title="Lihat Website"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-category-badge">Company Profile</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Mutiara Solusi Cipta</h3>
+                        <span class="portfolio-date">2024</span>
+                        <p class="portfolio-problem">
+                            <strong>Masalah:</strong> Perusahaan jasa sudah beroperasi bertahun-tahun namun belum
+                            memiliki website sebagai wajah digital yang bisa ditemukan calon klien di Google.
+                        </p>
+                        <p class="portfolio-result">
+                            <i class="fas fa-chart-line"></i> <strong>Hasil:</strong> Website company profile yang
+                            clean, modern, dan SEO-ready. Klien baru bisa menemukan dan menghubungi perusahaan melalui
+                            pencarian Google tanpa perlu dari mulut ke mulut.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="portfolio-tech-label">Tech Stack</span>
+                            <ul class="portfolio-tech-list">
+                                <li>HTML / CSS / JS</li>
+                                <li>Responsive Design</li>
+                                <li>SEO Optimized</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-fit">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Cocok untuk:</strong> Perusahaan Jasa, UMKM, CV/PT, Bisnis Lokal</span>
+                        </div>
+                        <a href="https://mutiarasolusicipta.com" target="_blank" class="btn btn-outline-sm">
+                            <i class="fas fa-external-link-alt"></i> Lihat Website Live
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-cta">
-                <a href="assets/Portfolio_Dwiky Anggarda.pdf" class="btn btn-primary" download>
-                    <i class="fas fa-download"></i> <span data-i18n="portfolio.downloadPortfolio">Download Portfolio Lengkap</span>
+                <p data-i18n="portfolio.ctaText">Ingin lihat detail lengkap setiap proyek?</p>
+                <div class="portfolio-cta-buttons">
+                    <a href="assets/Full_CV_Portfolio_Dwiky_Anggarda.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> <span data-i18n="portfolio.downloadPortfolio">Download Portfolio
+                            Lengkap</span>
+                    </a>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20proyek-proyek%20kamu."
+                        target="_blank" class="btn btn-outline-green">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="portfolio.ctaWa">Tanya Langsung</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Trust Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials.title">Dipercaya Klien</h2>
+            <p class="section-subtitle" data-i18n="testimonials.subtitle">Apa kata mereka yang sudah bekerja sama</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote" data-i18n="testimonials.t1.quote">
+                        "Sistem absensi dan penggajian yang dibangun sangat membantu operasional kami. Proses yang
+                        biasanya butuh setengah hari kini selesai dalam hitungan menit."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <strong data-i18n="testimonials.t1.name">Pimpinan PKBM Permata Sunnah</strong>
+                            <span data-i18n="testimonials.t1.role">Lembaga Pendidikan, Jawa Timur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote" data-i18n="testimonials.t2.quote">
+                        "Integrasi payment gateway yang dibangun sangat stabil. Rekonsiliasi yang dulu manual dan
+                        error-prone sekarang berjalan otomatis tanpa perlu campur tangan manual."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">B</div>
+                        <div class="author-info">
+                            <strong data-i18n="testimonials.t2.name">Tim Operasional BOSCOD</strong>
+                            <span data-i18n="testimonials.t2.role">Platform Logistik & COD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote" data-i18n="testimonials.t3.quote">
+                        "Proses pengajuan izin yang dulu butuh berlembar-lembar dokumen kini bisa diselesaikan lewat
+                        sistem. Approval yang bisa selesai dengan cepat dan tidak ribet."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <strong data-i18n="testimonials.t3.name">Supervisor E-SIKA Lomanis</strong>
+                            <span data-i18n="testimonials.t3.role">Perusahaan Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span data-i18n="trust.b1">Kode Standart & Terdokumentasi</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-headset"></i>
+                    <span data-i18n="trust.b2">Support Pasca-Launch</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-clock"></i>
+                    <span data-i18n="trust.b3">Estimasi Waktu Transparan</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-lock"></i>
+                    <span data-i18n="trust.b4">Keamanan Data Terjamin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta.title">Punya Ide Sistem atau Masalah Bisnis yang Ingin Diselesaikan?</h2>
+                <p data-i18n="cta.desc">Konsultasi gratis, tidak ada kewajiban. Ceritakan kebutuhan kamu dan saya akan
+                    kasih gambaran solusi yang tepat.</p>
+                <div class="cta-features">
+                    <span><i class="fas fa-check-circle"></i> <span data-i18n="cta.f1">Respons dalam 1 jam</span></span>
+                    <span><i class="fas fa-check-circle"></i> <span data-i18n="cta.f2">Estimasi harga
+                            gratis</span></span>
+                    <span><i class="fas fa-check-circle"></i> <span data-i18n="cta.f3">Tanpa ikatan kontrak
+                            awal</span></span>
+                </div>
+                <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20ingin%20konsultasi%20gratis%20tentang%20kebutuhan%20sistem%20bisnis%20saya."
+                    target="_blank" class="btn btn-cta">
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="cta.btn">Mulai Konsultasi Gratis Sekarang</span>
                 </a>
+                <div class="cta-alt">
+                    <div class="cta-alt-divider">
+                        <span data-i18n="cta.altDivider">atau pilih cara lain yang lebih santai</span>
+                    </div>
+                    <a href="mailto:dwiky.amin@gmail.com" class="cta-email-pill" id="ctaEmailPill">
+                        <span class="cta-email-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="cta-email-text">
+                            <span class="cta-email-label" data-i18n="cta.emailLabel">Kirim Email Langsung</span>
+                            <span class="cta-email-addr">dwiky.amin@gmail.com</span>
+                        </span>
+                        <span class="cta-email-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <p class="cta-response-note" data-i18n="cta.responseNote">
+                        <i class="fas fa-bolt"></i> Biasanya dibalas dalam <strong>1–3 jam</strong> di hari kerja
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -366,26 +1658,26 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" data-i18n="contact.title">Hubungi Saya</h2>
-            <p class="section-subtitle" data-i18n="contact.subtitle">Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya</p>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Ada proyek atau pertanyaan? Saya siap bantu</p>
 
             <div class="contact-container">
                 <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon--wa">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/6283832525360" target="_blank">+62 838-3252-5360</a></p>
+                        </div>
+                    </div>
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>dwiky.amin@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p>+62 838-3252-5360</p>
+                            <p><a href="mailto:dwiky.amin@gmail.com">dwiky.amin@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -393,18 +1685,21 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 data-i18n="contact.address">Alamat</h4>
-                            <p>Sidoarjo, Jawa Timur, Indonesia</p>
+                            <h4 data-i18n="contact.area">Area Layanan</h4>
+                            <p>Sidoarjo, Surabaya & Jawa Timur<br><small data-i18n="contact.remote">(Remote untuk
+                                    seluruh Indonesia)</small></p>
                         </div>
                     </div>
 
                     <div class="contact-social">
-                        <h4 data-i18n="contact.followMe">Ikuti Saya</h4>
+                        <h4 data-i18n="contact.followMe">Temukan Saya di</h4>
                         <div class="social-links">
-                            <a href="https://github.com/dwikyanggarda" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/dwikyanggarda" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/DwikyAnggarda" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/dwikyanggarda" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/dwikyanggarda" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -419,16 +1714,21 @@
                         <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
                     </div>
                     <div class="form-group">
-                        <label for="subject" data-i18n="contact.form.subject">Subjek</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subjek pesan">
+                        <label for="business" data-i18n="contact.form.business">Nama Bisnis / Usaha</label>
+                        <input type="text" id="business" name="business"
+                            placeholder="Contoh: Toko Maju Jaya, Sekolah ABC">
                     </div>
                     <div class="form-group">
-                        <label for="message" data-i18n="contact.form.message">Pesan</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+                        <label for="message" data-i18n="contact.form.message">Ceritakan Kebutuhanmu</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Contoh: Saya butuh sistem absensi untuk 50 karyawan..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
+                    <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
                         <i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.send">Kirim Pesan</span>
                     </button>
+                    <p class="form-note" data-i18n="contact.form.note">Atau langsung <a
+                            href="https://wa.me/6283832525360" target="_blank">chat WhatsApp</a> untuk respons lebih
+                        cepat</p>
                 </form>
             </div>
         </div>
@@ -439,14 +1739,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">Dwiky<span>.</span></a>
-                    <p data-i18n="footer.tagline">Backend Developer dengan kemampuan Fullstack</p>
+                    <a href="#" class="footer-logo">Dwiky Anggarda<span>.</span></a>
+                    <p data-i18n="footer.tagline">Jasa Pembuatan Aplikasi & Sistem Bisnis</p>
+                    <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Sidoarjo, Jawa Timur</p>
                 </div>
                 <div class="footer-links">
                     <h4 data-i18n="footer.quickLinks">Link Cepat</h4>
                     <ul>
                         <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
                         <li><a href="#about" data-i18n="nav.about">Tentang</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
                         <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
                         <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
                     </ul>
@@ -454,15 +1756,24 @@
                 <div class="footer-social">
                     <h4 data-i18n="footer.connect">Terhubung</h4>
                     <div class="social-links">
-                        <a href="https://github.com/dwikyanggarda" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/dwikyanggarda" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/DwikyAnggarda" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/dwikyanggarda" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/dwikyanggarda" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/dwiky_anggarda/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6283832525360" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
+                    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20ingin%20konsultasi%20gratis."
+                        target="_blank" class="footer-wa-btn">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="footer.ctaWa">Konsultasi Gratis</span>
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Dwiky Anggarda Amien. <span data-i18n="footer.rights">Hak Cipta Dilindungi.</span></p>
+                <p>&copy; <span id="copyright-year"></span> Dwiky Anggarda. <span data-i18n="footer.rights">Hak Cipta
+                        Dilindungi.</span></p>
             </div>
         </div>
     </footer>
@@ -471,6 +1782,13 @@
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6283832525360?text=Halo%20Dwiky%2C%20saya%20ingin%20konsultasi%20gratis." target="_blank"
+        class="float-wa" aria-label="WhatsApp Dwiky">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-wa-tooltip" data-i18n="floatWa.tooltip">Konsultasi Gratis!</span>
+    </a>
 
     <script src="assets/styles/all.js"></script>
 </body>

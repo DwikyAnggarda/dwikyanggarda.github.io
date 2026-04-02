@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>OG Image – Dwiky Anggarda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1e;
+        }
+
+        .og-wrap {
+            width: 1200px;
+            height: 630px;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a0f1e 0%, #0d2137 40%, #0a1a2e 100%);
+        }
+
+        /* ── Background decorations ── */
+        .bg-glow-1 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(15, 118, 110, 0.25) 0%, transparent 70%);
+            top: -150px;
+            left: 200px;
+            pointer-events: none;
+        }
+
+        .bg-glow-2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, transparent 70%);
+            bottom: -100px;
+            right: 300px;
+            pointer-events: none;
+        }
+
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        /* ── LEFT PANEL ── */
+        .left {
+            width: 340px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 44px 36px 44px 48px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(15, 118, 110, 0.2);
+            border: 1px solid rgba(20, 184, 166, 0.4);
+            color: #5eead4;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 22px;
+        }
+
+        .brand-tag::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2dd4bf;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        .profile-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .profile-photo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 2.5px solid #14b8a6;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 5px rgba(20, 184, 166, 0.15);
+        }
+
+        .profile-info .name {
+            font-size: 16px;
+            font-weight: 800;
+            color: #f1f5f9;
+            line-height: 1.2;
+        }
+
+        .profile-info .title {
+            font-size: 11.5px;
+            color: #94a3b8;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .profile-info .location {
+            font-size: 10.5px;
+            color: #14b8a6;
+            margin-top: 3px;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, rgba(20, 184, 166, 0.5), transparent);
+            margin-bottom: 24px;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 12px 14px;
+        }
+
+        .stat-box .snum {
+            font-size: 22px;
+            font-weight: 900;
+            color: #2dd4bf;
+            line-height: 1;
+        }
+
+        .stat-box .slabel {
+            font-size: 10px;
+            color: #64748b;
+            margin-top: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Trust badges */
+        .badges {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .badge-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 6px;
+            background: rgba(15, 118, 110, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2dd4bf;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+
+        /* ── CENTER PANEL ── */
+        .center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 44px 28px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #14b8a6;
+            margin-bottom: 14px;
+        }
+
+        .headline {
+            font-size: 34px;
+            font-weight: 900;
+            color: #f8fafc;
+            line-height: 1.18;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .headline em {
+            font-style: normal;
+            background: linear-gradient(135deg, #2dd4bf, #0d9488);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtext {
+            font-size: 13.5px;
+            color: #94a3b8;
+            line-height: 1.65;
+            margin-bottom: 28px;
+            max-width: 380px;
+        }
+
+        .subtext strong {
+            color: #cbd5e1;
+        }
+
+        /* Service Chips */
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .chip {
+            background: rgba(15, 118, 110, 0.18);
+            border: 1px solid rgba(20, 184, 166, 0.3);
+            color: #5eead4;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 50px;
+        }
+
+        /* CTA */
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0f766e, #0d9488);
+            color: white;
+            font-size: 15px;
+            font-weight: 800;
+            padding: 14px 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(15, 118, 110, 0.45);
+            width: fit-content;
+            letter-spacing: 0.2px;
+        }
+
+        .cta-btn .cta-arrow {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+
+        /* Phone hint */
+        .wa-hint {
+            margin-top: 14px;
+            font-size: 11px;
+            color: #f8fafc;
+            /* color: #475569; */
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .wa-hint::before {
+            content: '📱';
+        }
+
+        /* ── RIGHT PANEL – Portfolio Mosaic ── */
+        .right {
+            width: 290px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 28px 28px 28px 12px;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mosaic-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mosaic-card {
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+        }
+
+        .mosaic-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .mosaic-card .badge-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 10px 8px 6px;
+            font-size: 8.5px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Mosaic sizes */
+        .card-lg {
+            width: 168px;
+            height: 108px;
+        }
+
+        .card-sm {
+            width: 100px;
+            height: 108px;
+        }
+
+        .card-md {
+            width: 135px;
+            height: 90px;
+        }
+
+        .card-xs {
+            width: 133px;
+            height: 90px;
+        }
+
+        /* ── Bottom bar ── */
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.03);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 48px;
+            z-index: 10;
+        }
+
+        .bottom-bar .url {
+            font-size: 11px;
+            color: #f8fafc;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .bottom-bar .url span {
+            color: #14b8a6;
+        }
+
+        .bottom-bar .tagline {
+            font-size: 10.5px;
+            color: #f8fafc;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="og-wrap">
+        <!-- Background -->
+        <div class="bg-glow-1"></div>
+        <div class="bg-glow-2"></div>
+        <div class="bg-grid"></div>
+
+        <!-- LEFT: Identity -->
+        <div class="left">
+            <div class="brand-tag">Tersedia · Open for Project</div>
+
+            <div class="profile-row">
+                <img class="profile-photo" src="assets/image/cropped_circle_image-1-2 (1)hd.png" alt="Dwiky Anggarda"
+                    onerror="this.src='assets/image/cropped_circle_image-1-2 (1)hd.png'">
+                <div class="profile-info">
+                    <div class="name">Dwiky Anggarda</div>
+                    <div class="title">Full-Stack Developer & IT Consultant</div>
+                    <div class="location">📍 Sidoarjo, Jawa Timur</div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="snum">10+</div>
+                    <div class="slabel">Sistem Aktif</div>
+                </div>
+                <div class="stat-box">
+                    <div class="snum">6</div>
+                    <div class="slabel">Sektor Industri</div>
+                </div>
+                <div class="stat-box">
+                    <div class="snum">27+</div>
+                    <div class="slabel">Jenis Layanan</div>
+                </div>
+                <div class="stat-box">
+                    <div class="snum">100%</div>
+                    <div class="slabel">On-time Delivery</div>
+                </div>
+            </div>
+
+            <div class="badges">
+                <div class="badge-row">
+                    <div class="badge-icon">✓</div>
+                    Website · Apps · Bisnis
+                </div>
+                <div class="badge-row">
+                    <div class="badge-icon">✓</div>
+                    QRIS · Payment Gateway · Online Store
+                </div>
+                <div class="badge-row">
+                    <div class="badge-icon">✓</div>
+                    Konsultasi Gratis · Support Aktif
+                </div>
+            </div>
+        </div>
+
+        <!-- CENTER: Copy + CTA -->
+        <div class="center">
+            <div class="eyebrow">🚀 Jasa Pembuatan Sistem & Aplikasi Web</div>
+
+            <div class="headline">
+                Bisnis Kamu Butuh<br>
+                <em>Sistem Digital?</em><br>
+                Saya Bangun —<br>
+                Kamu Tinggal Jalankan.
+            </div>
+
+            <div class="subtext">
+                Dari <strong>UMKM, sekolah, klinik</strong>, hingga komunitas —
+                saya ubah proses manual yang membuang waktu jadi
+                sistem otomatis yang bekerja 24 jam.
+            </div>
+
+            <div class="chips">
+                <span class="chip">🏢 Sistem Manajemen</span>
+                <span class="chip">🌐 Website</span>
+                <span class="chip">📱 Landing Page</span>
+                <span class="chip">🔗 Integrasi API</span>
+                <span class="chip">🎯 Platform Khusus</span>
+            </div>
+
+            <div class="cta-btn">
+                👋 &nbsp;Selesaikan masalahmu di sini!
+                <span class="cta-arrow">→</span>
+            </div>
+
+            <div class="wa-hint">
+                wa.me/6283832525360 · Balas dalam &lt;1 jam
+            </div>
+        </div>
+
+        <!-- RIGHT: Portfolio Mosaic -->
+        <div class="right">
+            <div class="mosaic-row">
+                <div class="mosaic-card card-lg">
+                    <img src="assets/image/irc.png" alt="Company Profile">
+                    <div class="badge-overlay">Company Profile</div>
+                </div>
+                <div class="mosaic-card card-sm">
+                    <img src="assets/image/ppdb.png" alt="PPDB">
+                    <div class="badge-overlay">PPDB Online</div>
+                </div>
+            </div>
+            <div class="mosaic-row">
+                <div class="mosaic-card card-md">
+                    <img src="assets/image/lms.png" alt="LMS">
+                    <div class="badge-overlay">Platform LMS</div>
+                </div>
+                <div class="mosaic-card card-xs">
+                    <img src="assets/image/stok-aset.png" alt="Stok">
+                    <div class="badge-overlay">Manajemen Stok</div>
+                </div>
+            </div>
+            <div class="mosaic-row">
+                <div class="mosaic-card card-sm">
+                    <img src="assets/image/taaruf.png" alt="Taaruf">
+                    <div class="badge-overlay">Taaruf App</div>
+                </div>
+                <div class="mosaic-card card-lg">
+                    <img src="assets/image/mutiara-solusi-cipta.png" alt="Website">
+                    <div class="badge-overlay">Web Company</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="bottom-bar">
+            <div class="url"><span>dwikyanggarda</span>.github.io</div>
+            <div class="tagline">Full-Stack Developer · IT Consultant · Problem Solver</div>
+        </div>
+    </div>
+</body>
+
+</html>
