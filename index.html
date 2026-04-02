@@ -108,8 +108,9 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-wrapper">
-                    <img src="assets/image/cropped_circle_image-1-2 (1)hd.png"
-                        alt="Dwiky Anggarda Amien - Jasa Pembuatan Aplikasi Web">
+                    <img src="assets/image/cropped_circle_image-1-2 (1)hd.jpg"
+                        alt="Dwiky Anggarda Amien - Jasa Pembuatan Aplikasi Web"
+                        loading="eager" width="380" height="380" fetchpriority="high">
                 </div>
                 <div class="hero-floating-card card-1">
                     <i class="fas fa-check-circle"></i>
@@ -132,7 +133,8 @@
             <div class="about-content">
                 <div class="about-image">
                     <img src="assets/image/jaketmerah.jpg" alt="Dwiky Anggarda - Developer & Konsultan Teknologi"
-                        onerror="this.src='assets/image/cropped_circle_image-1-2 (1)hd.png'">
+                        loading="lazy" width="500" height="500"
+                        onerror="this.src='assets/image/cropped_circle_image-1-2 (1)hd.jpg'">
                     <!-- <div class="about-badge">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Sidoarjo, Jawa Timur</span>
@@ -1094,8 +1096,11 @@
                 <!-- Project 1: BOSCOD Platform -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/boscod.png" alt="BOSCOD Platform - Sistem Pengiriman COD"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1137,8 +1142,11 @@
                 <!-- Project 2: E-SIKA Lomanis -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/esika.png" alt="E-SIKA Lomanis - Sistem Izin Kerja Digital"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1180,8 +1188,11 @@
                 <!-- Project 3: Attendance & Payroll PKBM -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/persun.png" alt="Sistem Absensi & Penggajian PKBM Permata Sunnah"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1225,9 +1236,12 @@
                 <!-- Project 4: SIMS -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/sistem-informasi-penomoran-dokumen.png"
                             alt="Sistem Informasi Manajemen Sekolah"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1266,8 +1280,11 @@
                 <!-- Project 5: Gudang & Stok -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/stok-aset.png" alt="Sistem Manajemen Gudang & Stok"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1307,8 +1324,11 @@
                 <!-- Project 6: PPDB -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/ppdb.png" alt="Sistem PPDB Sekolah Online"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1347,8 +1367,11 @@
                 <!-- Project 7: LMS -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/lms.png" alt="Platform Learning Management System"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1388,8 +1411,11 @@
                 <!-- Project 8: Taaruf / Biro Jodoh -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
+                        <div class="img-skeleton"></div>
                         <img src="assets/image/taaruf.png" alt="Sistem Biro Jodoh & Taaruf Online"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="#" class="portfolio-link" title="View Project"
@@ -1430,8 +1456,11 @@
                 <!-- Project 9: Integritas Research and Consulting -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="assets/image/irc.png" alt="Website Integritas Research and Consulting"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="img-skeleton"></div>
+                        <img src="assets/image/irc.jpg" alt="Website Integritas Research and Consulting"
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="https://www.integritasrc.com" target="_blank" class="portfolio-link"
@@ -1474,8 +1503,11 @@
                 <!-- Project 10: Mutiara Solusi Cipta -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="assets/image/mutiara-solusi-cipta.png" alt="Website Mutiara Solusi Cipta"
-                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                        <div class="img-skeleton"></div>
+                        <img src="assets/image/mutiara-solusi-cipta.jpg" alt="Website Mutiara Solusi Cipta"
+                            loading="lazy" width="800" height="200" class="portfolio-img-lazy"
+                            onload="this.previousElementSibling.style.display='none'; this.classList.add('img-loaded')"
+                            onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.parentElement.classList.add('no-img')">
                         <div class="portfolio-overlay">
                             <div class="portfolio-links">
                                 <a href="https://mutiarasolusicipta.com" target="_blank" class="portfolio-link"

@@ -963,8 +963,15 @@ img {
     transition: opacity var(--transition-fast);
 }
 
+/* Fallback: card visible by default (no JS dependency for basic display) */
+.service-card {
+    /* ensure cards are visible unless explicitly hidden */
+    opacity: 1;
+}
+
 .service-card.hidden {
-    display: none;
+    display: none !important;
+    opacity: 0;
 }
 
 .service-card.fade-in {
@@ -1104,6 +1111,39 @@ img {
     height: 200px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+}
+
+/* =========================================
+   Skeleton Shimmer Loading
+   ========================================= */
+.img-skeleton {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        #e2e8f0 0%,
+        #f1f5f9 40%,
+        #e2e8f0 80%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+@keyframes skeleton-shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position:  200% 0; }
+}
+
+/* Lazy image: start invisible, fade in when loaded */
+.portfolio-img-lazy {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio-img-lazy.img-loaded {
+    opacity: 1;
 }
 
 .portfolio-image.no-img {

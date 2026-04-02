@@ -543,8 +543,8 @@ if (contactForm) {
 // Animation on Scroll
 // =========================================
 const observerOptions = {
-    threshold: 0.08,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0,           // fire the moment ANY part enters viewport
+    rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -552,41 +552,38 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
-            entry.target.dataset.seen = 'true'; // mark as seen so tab filter knows
-            observer.unobserve(entry.target);   // stop observing once visible
+            entry.target.dataset.seen = 'true';
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Apply animation to sections and cards (exclude service-cards — tab filter handles them)
-document.querySelectorAll('section, .portfolio-item, .testimonial-card').forEach(el => {
+// IMPORTANT: Do NOT set opacity:0 on entire <section> elements.
+// Sections (especially Services with 27+ cards) can be very tall —
+// threshold:0.08 used to require 300–500px of invisible content
+// before revealing! Only animate specific sub-elements (cards, items).
+document.querySelectorAll('.portfolio-item, .testimonial-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
 
-// Service cards: subtle initial state managed by CSS, not inline observer
-document.querySelectorAll('.service-card').forEach(el => {
+// Section headings get a subtle fade-in via CSS only (no opacity:0 inline)
+document.querySelectorAll('.section-title, .section-subtitle').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    // Short delay so page load feels smooth
-    setTimeout(() => {
-        if (!el.classList.contains('hidden')) {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-            el.dataset.seen = 'true';
-        }
-    }, 100);
+    observer.observe(el);
 });
 
-// Make hero visible immediately
+// Hero is always visible immediately
 const heroSection = document.querySelector('.hero');
 if (heroSection) {
     heroSection.style.opacity = '1';
     heroSection.style.transform = 'translateY(0)';
 }
+
 
 // =========================================
 // Initialize
@@ -689,6 +686,6 @@ function comingSoon() {
         });
     });
 
-    // Init count on page load
-    updateCount('all');
+    // Init: show all cards on page load with fade-in animation
+    filterCards('all');
 })();
